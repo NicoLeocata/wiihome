@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{TITLE}} — Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Rajdhani:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/project.css" />
+
+    <!-- Optional per-project accent colors -->
+    <style>
+      :root {
+        --accent: {{ACCENT || #00a5ea}};
+        --accent-2: {{ACCENT_LIGHT || #3ec7ff}};
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="backbar">
+        <a href="../index.html">⟵ Wii Menu</a>
+      </div>
+      <div>
+        <div class="title">{{TITLE}}</div>
+        <div class="subtitle">{{SUBTITLE}}</div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="container">
+      <!-- Overview -->
+      <section class="card">
+        <div class="grid grid-2">
+          <div>
+            <h2>Overview</h2>
+            <p>{{OVERVIEW}}</p>
+          </div>
+
+          <aside>
+            <div class="list">
+              <span class="hchip">Role: {{ROLE}}</span>
+              <span class="hchip">Year: {{YEAR}}</span>
+              <span class="hchip">Duration: {{DURATION}}</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="card">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="{{IMG_1}}" alt="{{TITLE}} image 1" />
+          <img src="{{IMG_2}}" alt="{{TITLE}} image 2" />
+          <img src="{{IMG_3}}" alt="{{TITLE}} image 3" />
+          <img src="{{IMG_4}}" alt="{{TITLE}} image 4" />
+          <img src="{{IMG_5}}" alt="{{TITLE}} image 5" />
+          <img src="{{IMG_6}}" alt="{{TITLE}} image 6" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© {{YEAR}} {{AUTHOR || Your Name}}</footer>
+
+    <!-- Image viewer modal -->
+    <div id="imgModal" class="img-modal">
+      <span id="closeModal" class="close">&times;</span>
+      <img class="img-modal-content" id="modalImg" alt="" />
+    </div>
+
+    <script>
+      const modal = document.getElementById("imgModal");
+      const modalImg = document.getElementById("modalImg");
+      const closeBtn = document.getElementById("closeModal");
+
+      document.querySelectorAll(".gallery img").forEach((img) => {
+        img.addEventListener("click", () => {
+          modal.style.display = "flex";
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+        });
+      });
+
+      closeBtn.onclick = () => (modal.style.display = "none");
+      modal.onclick = (e) => {
+        if (e.target === modal) modal.style.display = "none";
+      };
+    </script>
+  </body>
+</html>

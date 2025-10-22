@@ -1,0 +1,386 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wii Menu — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Rajdhani:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="lines" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="toprow">
+        <div class="logo" aria-label="Wii style portfolio logo">
+          Wii-Style Portfolio
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            opacity: 0.6;
+            user-select: none;
+          "
+        >
+          <span style="font-weight: 700">Page 1</span>
+          <span style="font-size: 20px">❯</span>
+        </div>
+      </div>
+
+      <div id="grid" class="grid" role="list">
+        <!-- Example project tiles. Replace data-title and data-url per project. -->
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Counter-Strike 2 Case Study"
+          data-url="projects/cs2.html"
+          aria-label="Open project: Counter-Strike 2"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Counter-Strike 2"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Counter-Strike_2_logo.svg"
+            />
+          </div>
+          <div class="tile-label">Counter-Strike 2</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Steam Redesign"
+          data-url="projects/steam.html"
+          aria-label="Open project: Steam Redesign"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Steam"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg"
+            />
+          </div>
+          <div class="tile-label">Steam</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Discord Branding"
+          data-url="projects/discord.html"
+          aria-label="Open project: Discord Branding"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Discord"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg"
+            />
+          </div>
+          <div class="tile-label">Discord</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Chromium UI"
+          data-url="projects/chromium.html"
+          aria-label="Open project: Chromium UI"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Chromium"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/73/Chromium_material_icon.svg"
+            />
+          </div>
+          <div class="tile-label">Chromium</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="DaVinci Resolve Posters"
+          data-url="projects/davinci.html"
+          aria-label="Open project: Resolve Posters"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Resolve"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5f/DaVinci_Resolve_17_logo.svg"
+            />
+          </div>
+          <div class="tile-label">Resolve</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Blender 3D"
+          data-url="projects/blender.html"
+          aria-label="Open project: Blender 3D"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Blender"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Blender_logo_no_text.svg"
+            />
+          </div>
+          <div class="tile-label">Blender</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Godot UI Kit"
+          data-url="projects/godot.html"
+          aria-label="Open project: Godot UI Kit"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Godot"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg"
+            />
+          </div>
+          <div class="tile-label">Godot</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Krita Poster Set"
+          data-url="projects/krita.html"
+          aria-label="Open project: Krita Posters"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Krita"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Calligrakrita-base.svg"
+            />
+          </div>
+          <div class="tile-label">Krita</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="OBS Overlays"
+          data-url="projects/obs.html"
+          aria-label="Open project: OBS"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="OBS"
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d3/OBS_Studio_Logo.svg"
+            />
+          </div>
+          <div class="tile-label">OBS Studio</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="GeoGuessr Illustration"
+          data-url="projects/geoguessr.html"
+          aria-label="Open project: GeoGuessr Illustration"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="GeoGuessr"
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/GeoGuessr_Logo.svg"
+            />
+          </div>
+          <div class="tile-label">GeoGuessr</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Dolphin Emulator Skin"
+          data-url="projects/dolphin.html"
+          aria-label="Open project: Dolphin Skin"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <img
+              alt="Dolphin"
+              src="https://upload.wikimedia.org/wikipedia/commons/3/30/Dolphin_emulator_logo.svg"
+            />
+          </div>
+          <div class="tile-label">Dolphin</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="Forecast Channel (About Me)"
+          data-url="about.html"
+          aria-label="Open project: About"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <div class="fake-card blue">Forecast Channel</div>
+          </div>
+          <div class="tile-label">About Me</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+
+        <button
+          class="channel"
+          role="listitem"
+          data-title="News Channel (Contact)"
+          data-url="contact.html"
+          aria-label="Open project: Contact"
+        >
+          <div class="gloss"></div>
+          <div class="focusRing"></div>
+          <div class="tile-content">
+            <div class="fake-card green">News Channel</div>
+          </div>
+          <div class="tile-label">Contact</div>
+          <div class="tooltip">A — Start</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom shelf with soft buttons + clock/date -->
+    <div class="shelf" role="contentinfo">
+      <div class="shelf-inner">
+        <div class="shelf-bar">
+          <div class="softBtn" title="Home">Wii <small>Menu</small></div>
+          <div style="flex: 1 1 auto; text-align: center">
+            <div id="clock" class="clock">12:00</div>
+            <div id="date" class="date">Fri 1/1</div>
+          </div>
+          <div class="mail" title="Messages"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Channel preview modal -->
+    <div
+      id="modal"
+      class="modal"
+      aria-hidden="true"
+      aria-label="Channel Preview"
+    >
+      <div
+        class="preview"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="previewTitle"
+      >
+        <div class="bezel">
+          <div id="previewTitle" class="logo">Project</div>
+        </div>
+        <div class="cta">
+          <button class="btn-gray" id="backBtn">Wii Menu</button>
+          <button class="btn-blue" id="startBtn">Start</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Clock + date like Wii
+      function pad(n) {
+        return n.toString().padStart(2, "0");
+      }
+      function setClock() {
+        const now = new Date();
+        const hh = now.getHours();
+        const mm = pad(now.getMinutes());
+        document.getElementById("clock").textContent = `${pad(hh)}:${mm}`;
+        const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        document.getElementById("date").textContent = `${
+          days[now.getDay()]
+        } ${now.getDate()}/${now.getMonth() + 1}`;
+      }
+      setClock();
+      setInterval(setClock, 1000 * 15);
+
+      // Modal logic mimicking the Home Assistant screen
+      const modal = document.getElementById("modal");
+      const previewTitle = document.getElementById("previewTitle");
+      const startBtn = document.getElementById("startBtn");
+      const backBtn = document.getElementById("backBtn");
+
+      let targetURL = "#";
+      function openPreview(title, url) {
+        previewTitle.textContent = title;
+        targetURL = url;
+        modal.classList.add("open");
+        modal.setAttribute("aria-hidden", "false");
+      }
+      function closePreview() {
+        modal.classList.remove("open");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+      document.querySelectorAll(".channel").forEach((el) => {
+        el.addEventListener("click", () => {
+          openPreview(el.dataset.title || "Project", el.dataset.url || "#");
+        });
+        el.setAttribute("tabindex", "0");
+        el.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            el.click();
+          }
+        });
+      });
+
+      backBtn.addEventListener("click", closePreview);
+      startBtn.addEventListener("click", () => {
+        window.location.href = targetURL;
+      });
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closePreview();
+      });
+
+      // Pointer size change on hover (Wii feel)
+      document.addEventListener("mouseover", (e) => {
+        if (e.target.closest(".channel, .btn-blue, .btn-gray")) {
+          document.body.classList.add("pointer-big");
+        } else {
+          document.body.classList.remove("pointer-big");
+        }
+      });
+    </script>
+  </body>
+</html>
